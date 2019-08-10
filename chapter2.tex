@@ -1,0 +1,168 @@
+
+
+\begin{figure}[!htb]
+    \centering
+    \begin{minipage}{0.3\textwidth}
+    \begin{tiny}
+    \paragraph{Logarithmus}\hfill\newline\newline
+    $log_a(u\cdot v)=log_a u+log_av$\\\\
+    $log_a(\frac{u}{v})=log_a U-log_av$\\\\
+    $log_a(u^v)=v\cdot log_a u$\\\\
+    $log_a \sqrt[n]{u}=\frac{1}{n}\cdot log_a u$\\\\
+    $log_br=\frac{log_ar}{log_ab}$\\\\
+      \paragraph{Ableitung}\hfill\\
+      \textbf{Generelle Ableitungen}\\
+      \begin{math}
+      \newline
+      c'=0\\
+      x'=1\\
+      x^{n+1}=(n+1)x^n\\
+      \lbrack ln(x)]'=\dfrac{-1}{-x}=\dfrac{1}{x}, x<0\\
+      \lbrack a^x]'=a^s\cdot ln(a)\\
+      \lbrack tanx]'=\dfrac{1}{cos^2x}=1+tan^2x\\
+      \lbrack cotx]'=-\dfrac{1}{sin^2x}=-1-cot^2x\\
+      \lbrack arcsinx]'=\dfrac{1}{\sqrt{1-x^2}}\\
+      \lbrack arccosx ]'=-\dfrac{1}{\sqrt{1-x^2}}\\
+      \lbrack arctanx]'=\dfrac{1}{1+x^2}\\
+      \lbrack arccot x]'=-\dfrac{1}{1+x^2}\\
+    \end{math}
+    \textbf{Regeln}\\
+    
+    \paragraph{Integral}\hfill\\\\
+    \textbf{Regeln}\\
+    
+    Partielle Integration:\\
+    $\int f'(x)g(x)dx=f(x)g(x)-\int f(x)g'(x)dx$\\\\
+    
+    Potenzregel:\\
+    $\int x^n dx=\frac{1}{n+1}x^{n+1}+C$\\\\
+    
+    Summenregel:\\
+    $\int (f(x)+g(x))dx=\int f(x)dx+ \int g(x)dx$\\\\
+
+    Extra:\\
+    $\int \frac{f'(x)}{f(x)}dx=ln$ $f(x)+C$\\\\\\
+    
+    \textbf{Grundintegrale}\\
+       \begin{math}
+       \int 0 dx=c\\
+       \int 1 dx=x+c\\
+       \int x^n dx=\dfrac{1}{n+1}x^{n+1}+c\\
+       \int \dfrac{1}{x}dx=ln|x|+c\\
+       \int e^xdx=e^x+c\\
+       \int a^xdx=\dfrac{1}{lna}a^x+c,a\neq 1\\
+       \int cosx\;dx=sinx+c\\
+       \int sinx\;dx=-cosx+c\\
+       \int \dfrac{1}{cos^2x}dx=tanx+c\\
+       \int tan^2x\;dx=tanx-x+c\\
+       \int \dfrac{1}{sin^2x}dx=-cotx+c\\
+       \int cot^2x\;dx=-cotx-x+c\\
+       \int \dfrac{1}{\sqrt{1-x^2}}dx=arcsinx+c\\
+       \int \dfrac{1}{\sqrt{1-x^2}}dx=-arccosx+c\\
+       \int\dfrac{1}{1+x^2}dx=arctanx+c\\
+       \int \dfrac{1}{1+x^2}dx=-arccotx+c\\
+       \int tanx\;dx=\int \dfrac{sinx}{cosx}dx=-(cos(x))\\
+       \end{math}
+    \end{tiny}
+    \end{minipage}
+    \begin{minipage}{0.3\textwidth}
+       \begin{tiny}
+       \paragraph{Kapitel 2}\hfill\\\\
+        \textbf{Variablen trennen:}\\ $y'=\dfrac{y^2}{x^2}$\\
+        \begin{enumerate}
+            \item Variablen trennen: $\dfrac{dy}{dx}=\dfrac{y^2}{x^2}$
+            \item Sortieren:$\dfrac{dy}{y^2}=\dfrac{dx}{x^2}$
+            \item $Integrieren:\\ \int \dfrac{1}{y^2}dy= \int \dfrac{1}{x^2}dx\\\\
+            \dfrac{-1}{y}+C_1=-\dfrac{1}{x}+C_2$
+            \item Aufloesen: $y=\dfrac{1}{\dfrac{1}{x}-C}$\\
+        \end{enumerate}
+        \textbf{Substitution}
+        \newline
+    \begin{enumerate}
+        \item $y=\int \dfrac{x}{1+x^2}dx\\$
+		\item $u=1+x^2$\\
+		\item $\dfrac{du}{dx}=u'=2x\rightarrow dx=\dfrac{1}{2x}du$\\
+		\item $y=\int \dfrac{x}{u}\cdot \dfrac{1}{2x}du=\dfrac{1}{2}\int \dfrac{1}{u}du$\\
+		\item $y= \frac{1}{2}lnu=\underline{\underline{\dfrac{ln(1+x^2)}{2}}}$\\\\
+    \end{enumerate}
+		
+ 
+       
+       \textbf{Partialbruchzerlegung}\\\\
+        \textbf{Beispiel 1: } $\dfrac{5x+11}{x^2+3x-10}$\\
+       \begin{enumerate}
+           \item Nullstellen finden: $x_1=-5,x_2=2$
+           \item Zuordnung:$\dfrac{A}{x-x_1},\dfrac{B}{x-x2}$
+           \item Gleichung lösen:\\ $A(x+5)+B(x-2)=5x+11$
+       \end{enumerate}
+       \textbf{Beispiel 2:} $\dfrac{1}{(y-1)(y+1)}$\\
+       \begin{enumerate}
+           \item $1,-1$\\
+        \item $\dfrac{A}{x-1},\dfrac{B}{x+1}$\\
+        \item $A(x+1)+B(y-1)=1$\\
+       $\rightarrow \underline{\underline{\dfrac{1}{2(y-1)}-\dfrac{1}{2(y+1)}}}$
+       \end{enumerate}
+       
+        \textbf{Änlichkeit:}\\
+        Wenn möglich, umformen und $\dfrac{y}{x}$ mit $u$ ersetzen:\\
+        Umformen: $xy'=y+4x\rightarrow$ $y'=\dfrac{y}{x}+4$\\
+        Regel: u=$\dfrac{x}{y}\rightarrow$ $y=n\cdot x, y'=u'\cdot x+u$\\
+        Gleichsetzen:$y'=u'x+u=u+4$\\
+        Lösen/integrieren:$\dfrac{du}{dx}=\dfrac{4}{x} \rightarrow du=\dfrac{4}{x}dx\\ 
+        \rightarrow \underline{u+C_1=4\cdot lnx+C_2}$\\ u ersetzen:$\underline{\underline{y=4\cdot x\cdot lnx+Cx}}\\$
+       \end{tiny}
+    \end{minipage}
+    \begin{minipage}{0.3\textwidth}
+       \begin{tiny}
+        \paragraph{Kapitel 3}\hfill\\
+        \textbf{Homogene DGL}\\
+        $y'=4x-xy,y_0=7$\\\\
+        \begin{enumerate}
+            \item Homogener teil seperat lösen:\\
+                $y_h'=-xy\rightarrow yh=\underline{C\cdot e^{-\frac{x^2}{2}}}$
+        \item Fundamentallösung $\varphi(x)=y_h$ mit C=1:\\
+                $\varphi(x)=\underline{1\cdot e^{-\frac{x^2}{2}}}$
+        \item Die partikuläre Lösung $y_p$ setzt sich immer aus $C(x)$ mal $\varphi(x)$ zusammen:\\
+                $y_p=\underline{C(x)\cdot e^{-\frac{x^2}{2}}}$
+        \item  Diese Lösung muss dann noch integriert werden:\\
+                $y_p'=\underline{C(x)'e^{-\frac{x^2}{2}}-x\cdot e^{-\frac{x^2}{2}}\cdot}$
+        \item Beides wird dann in die Anfangsgleichung eingesetzt:\\
+                $y_p'+x\cdot y_p=4x$ \\
+                $C(x)'=\underline{4x\cdot e^{-\frac{x^2}{2}}}$\\
+                $C(x)=\underline{4\cdot e^{\frac{x^2}{2}}}$
+        \item Das berechnete $C(x)$ wird dann in die $y_p=C(x)\cdot \varphi(x)$ Gleichung eingesetzt:\\
+                $y_p=4\cdot e^{\frac{x^2}{2}}\cdot 1\cdot e^{-\frac{x^2}{2}}=\underline{4}$\\
+        \item Die gesuchte Lösung setzt sich zusammen aus der homogenen und der partikulären Lösung                   zusammen:\\
+                $y=\underline{C\cdot e^{-\frac{x^2}{2}}+4}$
+        \item Zum schluss werden die Anfangswerte eingesetzt:\\
+        $7=C\cdot e^{-\frac{0^2}{2}}+4 \rightarrow \underline{C=3}$\\
+        $\underline{\underline{y=3e^{-\frac{x^2}{2}}+4}}$\\
+        \end{enumerate}
+        
+        
+        \paragraph{Kapitel 4}\hfill\\
+        \textbf{Exaktheit und integrierender Faktor}
+        \begin{enumerate}
+            \item Auf exaktheit überprüfen:\\\\ $P_y=\frac{dP}{dy}\stackrel{?}{=}Q_x=\frac{dQ}{dx}$
+        \end{enumerate}
+    Wenn \textbf{exakt}: $ans_1=\underline{\underline{\int Pdx}}$\\
+
+    Wenn \textbf{nicht exakt} gilt: $\frac{dPM}{dy}=\frac{dQM}{dx}$. Um integrierender faktor $M$ zu bestimmen:
+         \begin{itemize}
+             \item  IF $\frac{P_y-Q_x}{Q}=f(x)$ $\rightarrow$ $M(x)=e^{\int f(x)dx}$
+             \item IF $\frac{Q_x-P_y}{P}=f(y)$ $\rightarrow$ $M(x)=e^{\int f(y)dy}$
+             \item ELSE M(x,y)=Try and error...
+         \end{itemize}
+         Somit: $ans_1=\underline{\underline{\int PM dx}}$
+
+
+        \begin{enumerate}
+        \setcounter{enumi}{1}
+            \item $ans_2=\frac{d\cdot ans_1}{dy}$
+            \item $ans_2=Q\rightarrow \varphi_{(y)}$ bestimmen.
+            \item $\varphi_{(y)}$ in $ans_1$ einsetzen und nach $y$ auflösen.
+            \item Anfangsbedingungen gleichsetzen.
+        \end{enumerate}
+       \end{tiny}
+    \end{minipage}
+\end{figure}
